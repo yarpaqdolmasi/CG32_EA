@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordinate System</title>
+    <style>
+        canvas { border: 1px solid #000; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+<h1>Elshad Atakishiyev</h1>
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+    <script>
+        const ctx = document.getElementById('myCanvas').getContext('2d');
+        ctx.beginPath();
+        ctx.moveTo(200, 0); ctx.lineTo(200, 400); // Y-axis
+        ctx.moveTo(0, 200); ctx.lineTo(400, 200); // X-axis
+        ctx.stroke();
+
+        ctx.fillStyle = 'red';
+        ctx.fillRect(197, 197, 6, 6); // Origin (0, 0)
+        ctx.fillText('(0, 0)', 210, 210);
+    </script>
+</body>
+</html>
+
+
+
+
